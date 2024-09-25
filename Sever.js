@@ -63,7 +63,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/pages', 'SeeDChat.html'))
 })
 // Serve signup page
-app.get('/signup', (req, res) => {
+app.get('/signup.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/pages', 'signup.html'));
 });
 
@@ -109,6 +109,7 @@ app.get('/login', (req, res) => {
 app.post('/login', async (req, res) => {
   const { username, email, password } = req.body;
 
+
   // Load users from db.json before login attempt
   loadUsers();
 
@@ -135,6 +136,18 @@ app.post('/login', async (req, res) => {
 app.get('/chat', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/pages', 'chat.html'));
 });
+app.get('/image:uploads', (req,res) => {
+  app.post('/image: /uploads', upload.single('image'), (req, res) => {
+    const filename = req.params.filename;
+    const image_path = path.join(__dirname, 'uploads', filename);
+    res.sendFile(image_path)
+    res.render(image)
+  
+  });
+
+  })
+  
+
 
 // searching Route
 app.get('/search', (req, res) => {

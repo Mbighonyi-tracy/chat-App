@@ -16,5 +16,17 @@
     "email": "sss@gmail.com",
     "password": "$2b$10$0ywcwh7IQaZNA9aHbbmmweipRAyveeGYLIntJWOpHJHCVhN1ZUXv2",
     "profileImage": "Icon.png"
+  },
+  {
+    "username": "tracy",
+    "email": "ss@gmail.com",
+    "password": "$2b$10$.nNAXmiRK4ATxZg9P78YMumHeilmmFthXyjZ5ub7rsu5r1SdAWGFi",
+    "profileImage": "screenshot.png"
+  },
+  {
+    "username": "aa",
+    "email": "uu@gmail.com",
+    "password": "$2b$10$md.w29u0ym2oUiiF0HUkjufMBbgvoVisNy3UIiWDsXveRxhd6GwlO",
+    "profileImage": "screenshot.png"
   }
 ]
